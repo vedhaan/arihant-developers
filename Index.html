@@ -611,16 +611,17 @@
         .cnst-recent-works-button-con {
             display: flex;
             justify-content: center;
-            margin-top: 2rem;
-            flex-wrap: wrap;
+            
         }
 
         .cnst-recent-works-button-con button {
             padding: 0.6rem 1.5rem;
+            margin-right: 15px;
             border: none;
             background-color: transparent;
             font-size: 15px;
             cursor: pointer;
+            border-radius: 25px;
             transition: all 0.3s ease-in-out;
         }
 
@@ -635,10 +636,11 @@
         }
 
         .cnst-recent-works-collection {
+            padding: 15px;
             margin-top: 1rem;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            row-gap: 2px;
+            gap: 10px;
             cursor: pointer;
         }
 
@@ -662,6 +664,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+            border-radius: 25px;
         }
 
         .cnst-recent-works-text {
