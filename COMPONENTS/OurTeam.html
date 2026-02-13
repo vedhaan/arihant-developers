@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team</title>
+
+    <link rel="stylesheet" href="../CSS/OurTeam.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <div class="cnst-team-main-con">
+
+        <div class="section-title">
+            <h2>Our Team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet iaculis elit.</p>
+        </div>
+
+        <!-- FIXED SWIPER STRUCTURE -->
+        <div class="cnst-team-card-con swiper team-swiper">
+
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="cnst-team-card swiper-slide">
+                    <div class="cnst-team-card-img-con">
+                        <img src="https://themes247.net/html5/construction/demo/assets/img/team/2.jpg" alt="cnst team">
+                        <div class="cnst-team-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="cnst-team-text-con">
+                        <p class="cnst-team-name">Preety Jinda</p>
+                        <p class="cnst-team-occupation">Engineer</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="cnst-team-card swiper-slide">
+                    <div class="cnst-team-card-img-con">
+                        <img src="https://themes247.net/html5/construction/demo/assets/img/team/2.jpg" alt="cnst team">
+                        <div class="cnst-team-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="cnst-team-text-con">
+                        <p class="cnst-team-name">Sam Parker</p>
+                        <p class="cnst-team-occupation">Architect</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="cnst-team-card swiper-slide">
+                    <div class="cnst-team-card-img-con">
+                        <img src="https://themes247.net/html5/construction/demo/assets/img/team/2.jpg" alt="cnst team">
+                        <div class="cnst-team-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="cnst-team-text-con">
+                        <p class="cnst-team-name">Jiya Seth</p>
+                        <p class="cnst-team-occupation">Planner</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="cnst-team-card swiper-slide">
+                    <div class="cnst-team-card-img-con">
+                        <img src="https://themes247.net/html5/construction/demo/assets/img/team/2.jpg" alt="cnst team">
+                        <div class="cnst-team-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="cnst-team-text-con">
+                        <p class="cnst-team-name">Preety Jinda</p>
+                        <p class="cnst-team-occupation">Engineer</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="cnst-team-card swiper-slide">
+                    <div class="cnst-team-card-img-con">
+                        <img src="https://themes247.net/html5/construction/demo/assets/img/team/2.jpg" alt="cnst team">
+                        <div class="cnst-team-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="cnst-team-text-con">
+                        <p class="cnst-team-name">Sam Parker</p>
+                        <p class="cnst-team-occupation">Architect</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="cnst-team-card swiper-slide">
+                    <div class="cnst-team-card-img-con">
+                        <img src="https://themes247.net/html5/construction/demo/assets/img/team/2.jpg" alt="cnst team">
+                        <div class="cnst-team-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-google"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                    <div class="cnst-team-text-con">
+                        <p class="cnst-team-name">Jiya Seth</p>
+                        <p class="cnst-team-occupation">Planner</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.team-swiper', {
+
+            direction: 'horizontal',
+            loop: true,
+            spaceBetween: 70,
+
+            autoplay: {
+                delay: 2500,     
+                disableOnInteraction: false,
+            },
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            breakpoints: {
+                480: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                1024: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-title {
+    text-align: center;
+    margin: auto;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #222;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 15px;
+    margin: auto;
+}
+
+.section-title h2:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 70px;
+    height: 3px;
+    background-color: #f39c12;
+}
+
+.cnst-recent-works-button-con {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.cnst-recent-works-button-con button {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.cnst-recent-works-button-con button:hover {
+    background-color: #f39c12;
+    color: white;
+}
+
+.cnst-recent-works-button-con button.active {
+    background-color: #f39c12;
+    color: white;
+}
+
+.cnst-recent-works-collection {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2px;
+    cursor: pointer;
+}
+
+.cnst-recent-works-collection-img-con {
+    position: relative;
+    height: 230px;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.cnst-recent-works-collection-img-con.hide {
+    opacity: 0;
+}
+
+.cnst-recent-works-collection-img-con:hover .cnst-recent-works-text {
+    opacity: 1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(58, 58, 58, 0.808));
+}
+
+.cnst-recent-works-collection-img-con img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cnst-recent-works-text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: auto;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform-origin: bottom;
+    padding-bottom: 10px;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.cnst-recent-works-text p {
+    margin: auto;
+}
+
+.cnst-recent-works-text p:nth-child(1) {
+    font-size: 20px;
+    white-space: nowrap;
+    color: white;
+}
+
+.cnst-recent-works-text p:nth-child(2) {
+    color: #f39c12;
+    font-size: 13px;
+}
+
+/* ---------------------------- */
+/* 🚀 RESPONSIVE DESIGN ADDED   */
+/* ---------------------------- */
+
+@media (max-width: 1200px) {
+    .cnst-recent-works-collection {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 0;
+        row-gap: 3px;
+    }
+}
+
+@media (max-width: 992px) {
+    .cnst-recent-works-collection {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0;
+        row-gap: 3px;
+    }
+}
+
+@media (max-width: 576px) {
+    .cnst-recent-works-collection {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 4px;
+    }
+
+    .cnst-recent-works-collection-img-con {
+        height: 200px;
+    }
+}

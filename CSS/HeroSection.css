@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.cnst-hero-main-con {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.cnst-hero-main-con::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000b2;
+    z-index: 2;
+}
+
+.cnst-hero-video-con {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.cnst-hero-main-head-con {
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cnst-hero-main-heading {
+    font-size: 70px;
+    white-space: nowrap;
+    color: rgba(255, 208, 0, 0.726);
+    margin: auto;
+}
+
+.cnst-hero-main-sub-heading {
+    color: rgba(255, 255, 255, 0.911);
+    font-size: 16px;
+    white-space: nowrap;
+    margin: auto;
+}
+
+/* --------------------- RESPONSIVE --------------------- */
+
+/* Tablets (768px) */
+@media (max-width: 992px) {
+    .cnst-hero-main-con {
+        height: 400px;
+    }
+
+    .cnst-hero-main-heading {
+        font-size: 55px;
+    }
+
+    .cnst-hero-main-sub-heading {
+        font-size: 14px;
+    }
+}
+
+/* Large Phones (480px–768px) */
+@media (max-width: 768px) {
+    .cnst-hero-main-con {
+        height: 350px;
+    }
+
+    .cnst-hero-main-heading {
+        font-size: 40px;
+        white-space: nowrap;  
+        text-align: center;
+    }
+
+    .cnst-hero-main-sub-heading {
+        font-size: 13px;
+        white-space: normal;
+        text-align: center;
+    }
+}
+
+/* Small Phones (below 480px) */
+@media (max-width: 480px) {
+    .cnst-hero-main-con {
+        height: 250px;
+    }
+
+    .cnst-hero-main-heading {
+        font-size: 24px;
+        white-space: nowrap;
+    }
+
+    .cnst-hero-main-sub-heading {
+        font-size: 8px;
+    }
+}
